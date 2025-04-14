@@ -1,0 +1,17 @@
+{
+	"Version": "2012-10-17",
+	"Statement": [
+		{
+			"Effect": "Allow",
+			"Action": [
+				"autoscaling:UpdateAutoScalingGroup",
+				"autoscaling:StartInstanceRefresh",
+				"ec2:DescribeImages",
+				"ec2:DescribeLaunchTemplates",
+				"ec2:CreateLaunchTemplateVersion",
+				"ec2:DescribeLaunchTemplateVersions"
+			],
+			"Resource": "*"
+		}
+	]
+}
