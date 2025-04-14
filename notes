@@ -18,3 +18,5 @@ Perfect for automated patching or deploying updated configurations via AMIs, ens
 - Boto3 (AWS SDK for Python)
 - Auto Scaling
 - EC2 AMIs
+--------------
+Once the function is created test it and if it works then go to Cloudwatch and createa a log group that call the lambda function has often as you need.
