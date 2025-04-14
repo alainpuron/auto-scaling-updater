@@ -1,0 +1,4 @@
+Create a new role for your lambda function - 'UpdateAMI-role'
+Add the policies by going to "Add Permission" and clicking 'Create inline policy'
+Add the role to the lambda function by going to 'Configuration' > 'Permission'
+Next to 'execution role' select 'Edit' and at the bottom in 'Existing role' select 'UpdateAMI-role'
