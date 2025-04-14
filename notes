@@ -1,0 +1,20 @@
+# EC2 AMI AutoScaling Updater
+
+This AWS Lambda function automates the process of updating an Auto Scaling Group (ASG) with the latest AMI created from a specific EC2 instance. It:
+
+- Retrieves the most recent AMI using EC2 `describe_images`.
+- Creates a new version of an existing Launch Template with the updated AMI.
+- Updates the specified ASG to use the new launch template version.
+- Triggers an instance refresh using a rolling deployment strategy.
+
+## Use Case
+
+Perfect for automated patching or deploying updated configurations via AMIs, ensuring your ASG always runs the latest instance version.
+
+## Technologies
+
+- Python 3.x
+- AWS Lambda
+- Boto3 (AWS SDK for Python)
+- Auto Scaling
+- EC2 AMIs
