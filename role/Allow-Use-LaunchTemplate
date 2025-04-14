@@ -1,0 +1,25 @@
+{
+	"Version": "2012-10-17",
+	"Statement": [
+		{
+			"Effect": "Allow",
+			"Action": [
+				"ec2:DescribeImages",
+				"ec2:DescribeLaunchTemplates",
+				"ec2:DescribeLaunchTemplateVersions",
+				"ec2:CreateLaunchTemplateVersion",
+				"autoscaling:UpdateAutoScalingGroup",
+				"autoscaling:StartInstanceRefresh"
+			],
+			"Resource": "*"
+		},
+		{
+			"Effect": "Allow",
+			"Action": [
+				"ec2:DescribeLaunchTemplateVersions",
+				"ec2:CreateLaunchTemplateVersion"
+			],
+			"Resource": "arn:aws:ec2:us-west-2:788354899888:launch-template/*"
+		}
+	]
+}
